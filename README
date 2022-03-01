@@ -4,20 +4,24 @@ RSA-Encryption/Decryption
 
 Description:
 This program has 3 executable files keygen, encrypt and decrypt. Keygen's job is to create two keys, a public key and a private key, which will be used for the encrypt and decrypt. Encrypt will take in a message or anything in the command line or from a specified file and return a cypher text. Then that cypher text can be put into the decrypt file to be turned back into the original message you typed out.
+
 How to run:
 First to turn keygen.c, encrypt.c, and decrypt.c into executable files type "make" or "make all". Then type in the command "./keygen" to run to the program and create the public and private keys. After doing this run "./encrypt" to create your encrypted message or specify a file to encrypt. Then get the cypher text outputted on the command line or in the outfile and run "./decrypt" to decrypt the cypher text back into the original message.
+
 Encrypt command line options:
 -i specify the infile.
 -o specify the outfile.
 -n specify the file containing the public key.
 -v verbose printing.
 -h print out helper message.
+
 Decrypt command line options:
 -i specify the infile.
 -o specify the outfile.
 -n specify the file containing the public key.
 -v verbose printing.
 -h print out helper message.
+
 Keygen command line options:
 -b specify the number of bits.
 -i spefify the number of iterations.
